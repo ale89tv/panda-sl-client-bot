@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panda SL Client Bot is a Windows control console for Second Life creators, estate managers and multi-account operators.">
+  <meta name="theme-color" content="#07111f">
+  <title>Panda SL Client Bot — Creator & Estate Control Console</title>
+  <link rel="icon" href="assets/icona.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Panda SL Client Bot home">
+      <img src="assets/icona.png" alt="">
+      <span>Panda <strong>SL</strong> Client Bot</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#preview" data-i18n="navPreview">UI Preview</a>
+      <a href="#features" data-i18n="navFeatures">Features</a>
+      <a href="#estate" data-i18n="navEstate">Estate Manager</a>
+      <a href="#download" data-i18n="navDownload">Download</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">
+        <span class="language-current">EN</span>
+        <span class="language-next">ITA</span>
+      </button>
+      <a class="button button-small button-ghost" href="#download" data-i18n="downloadShort">Download</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span><b data-i18n="heroEyebrow">Built for Second Life creators</b></div>
+        <h1 data-i18n-html="heroTitle">Create more.<br><em>Control everything.</em></h1>
+        <p data-i18n="heroText">
+          A premium Windows console for creators, estate managers and advanced Second Life users.
+          Run multiple avatars, manage land and parcels, broadcast group notices and keep your bots online.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="downloads/Panda-SL-Client-Bot-Estate-Setup-2.2.2.exe" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
+            <span data-i18n="downloadWindows">Download for Windows</span>
+          </a>
+          <a class="button button-ghost" href="#preview" data-i18n="seeInterface">See the interface</a>
+        </div>
+        <div class="hero-meta">
+          <span data-i18n="versionMeta">Estate Edition 2.2.2</span>
+          <span>Windows 10/11 · 64 bit</span>
+          <span data-i18n="licenseMeta">Guided installer + EULA</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbital orbital-one"></div>
+        <div class="orbital orbital-two"></div>
+        <div class="logo-stage">
+          <div class="logo-halo"></div>
+          <img src="assets/logo.png" alt="Panda SL Client Bot logo">
+        </div>
+        <div class="status-chip status-online"><i></i><span data-i18n="online">Online</span></div>
+        <div class="status-chip status-estate">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 12h6M9 16h6"/></svg>
+          <span data-i18n="estateReady">Estate ready</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip reveal" aria-label="Product highlights">
+      <div><strong data-i18n="trustCreatorTitle">Creator focused</strong><span data-i18n="trustCreatorText">Daily tools in one console</span></div>
+      <div><strong data-i18n="trustEstateTitle">Estate control</strong><span data-i18n="trustEstateText">Regions, land and parcels</span></div>
+      <div><strong data-i18n="trustAccountsTitle">Multi-account</strong><span data-i18n="trustAccountsText">Operate several avatars</span></div>
+      <div><strong data-i18n="trustNoticeTitle">Group notice</strong><span data-i18n="trustNoticeText">Manual or scheduled delivery</span></div>
+    </section>
+
+    <section class="section preview-section" id="preview">
+      <div class="section-heading centered reveal">
+        <div class="eyebrow"><span></span><b data-i18n="previewEyebrow">The complete workspace</b></div>
+        <h2 data-i18n-html="previewTitle">Your operation.<br><em>One clear dashboard.</em></h2>
+        <p data-i18n="previewText">Accounts, contacts, chat, movement, land tools and creator utilities remain visible without turning your workflow into a maze.</p>
+      </div>
+
+      <div class="app-preview reveal" aria-label="Panda SL Client Bot interface preview">
+        <div class="app-titlebar">
+          <div class="preview-brand"><img src="assets/icona.png" alt=""><div><b>Panda SL Client Bot</b><small>Premium Second Life control console</small></div></div>
+          <div class="preview-status"><i></i><span data-i18n="online">Online</span></div>
+          <div class="preview-info">Info · v2.2.2</div>
+          <div class="window-controls">—　□　×</div>
+        </div>
+        <div class="app-grid">
+          <aside class="preview-column preview-account">
+            <div class="ui-card account-card">
+              <small data-i18n="mainAccount">MAIN ACCOUNT</small>
+              <div class="account-identity"><span>SL</span><div><b>creator resident</b><em><i></i> Online · L$ 4,280</em></div></div>
+              <label>First name<input value="creator" readonly></label>
+              <label>Last name<input value="resident" readonly></label>
+              <label>Password<input value="••••••••••" readonly></label>
+              <button class="ui-primary" type="button" data-i18n="connect">Connect</button>
+            </div>
+            <div class="ui-card compact-list">
+              <small data-i18n="accounts">ACCOUNTS</small>
+              <div class="account-row"><span>SL</span><div><b>creator resident</b><em>Online · L$ 4,280</em></div><i>⋮</i></div>
+              <div class="account-row muted"><span>SL</span><div><b>store assistant</b><em>Offline</em></div><i>⋮</i></div>
+            </div>
+          </aside>
+
+          <div class="preview-column contacts-panel">
+            <div class="ui-card full-card">
+              <div class="card-heading"><small data-i18n="contacts">CONTACTS</small><em>3 online / 41 total</em></div>
+              <div class="fake-search" data-i18n="searchContacts">Search contacts...</div>
+              <div class="contact-row active"><span></span><div><b>Studio Manager</b><em>Online</em></div></div>
+              <div class="contact-row"><span></span><div><b>Event Host</b><em>Online</em></div></div>
+              <div class="contact-row"><span></span><div><b>Vendor Bot</b><em>Online</em></div></div>
+              <div class="contact-row offline"><span></span><div><b>Support Resident</b><em>Offline</em></div></div>
+            </div>
+          </div>
+
+          <div class="preview-column chat-panel">
+            <div class="ui-card full-card chat-card">
+              <div class="chat-target">IM target: Studio Manager</div>
+              <div class="fake-tabs"><b>System</b><span>Local Chat</span><span>IM</span></div>
+              <div class="chat-body">
+                <p><i></i><span>Account connected to Azalea Glades.</span></p>
+                <p><i></i><span>Estate information received.</span></p>
+                <p><i></i><span>41 contacts loaded successfully.</span></p>
+              </div>
+              <div class="chat-compose"><span data-i18n="typeMessage">Type a message...</span><button type="button" data-i18n="send">Send</button></div>
+            </div>
+            <div class="ui-card teleport-card">
+              <small data-i18n="pendingOffers">PENDING TELEPORT OFFERS</small>
+              <div class="teleport-line"><span data-i18n="noOffers">No pending teleport offers</span><button>Accept</button><button>Decline</button></div>
+              <div class="teleport-input"><span>secondlife://Region/128/128/25</span><button>Teleport</button></div>
+            </div>
+          </div>
+
+          <aside class="preview-column preview-tools">
+            <div class="ui-card movement-card">
+              <small data-i18n="botControls">BOT CONTROLS</small>
+              <div class="movement-grid"><button>↑</button><button>←</button><button>STOP</button><button>→</button><button>↓</button></div>
+            </div>
+            <div class="ui-card quick-tool"><small>OBJECT SIT</small><div class="uuid-field">Object UUID</div><div><button>Copy UUID</button><button>Sit</button></div></div>
+            <div class="ui-card module-card"><small>PANDA GROUP NOTICE</small><button>Broadcast Notice</button></div>
+            <div class="ui-card module-card estate-module"><small>PANDA ESTATE MANAGER</small><button data-i18n="manageEstate">Manage Estate</button></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section creator-section" id="features">
+      <div class="creator-copy reveal">
+        <div class="eyebrow"><span></span><b data-i18n="creatorEyebrow">Designed around creator work</b></div>
+        <h2 data-i18n-html="creatorTitle">Less panel switching.<br><em>More building.</em></h2>
+        <p data-i18n="creatorText">Panda brings the operational side of a Second Life business into one place—avatars, customers, groups, regions and land—so creators can focus on products, events and communities.</p>
+        <ul class="check-list">
+          <li><i>✓</i><span data-i18n="creatorPoint1">Keep store bots and assistants connected</span></li>
+          <li><i>✓</i><span data-i18n="creatorPoint2">Send product and event notices to selected groups</span></li>
+          <li><i>✓</i><span data-i18n="creatorPoint3">Monitor contacts, IMs, teleport offers and Linden balance</span></li>
+          <li><i>✓</i><span data-i18n="creatorPoint4">Manage parcels and estate operations without opening another tool</span></li>
+        </ul>
+      </div>
+      <div class="creator-cards reveal">
+        <article><span>01</span><b data-i18n="cardAccountsTitle">Avatar operations</b><p data-i18n="cardAccountsText">Multi-account login, balance, movement, teleport, object sit and automatic reconnect.</p></article>
+        <article><span>02</span><b data-i18n="cardCommunityTitle">Community tools</b><p data-i18n="cardCommunityText">Contacts, IM, local chat, teleport offers, payments and scheduled group notices.</p></article>
+        <article><span>03</span><b data-i18n="cardLandTitle">Land management</b><p data-i18n="cardLandText">Parcel lists, land sales, reclaim, purchase, estate access and region operations.</p></article>
+        <article><span>04</span><b data-i18n="cardSafetyTitle">Safer actions</b><p data-i18n="cardSafetyText">Confirmation prompts protect payments, restarts, returns and other sensitive operations.</p></article>
+      </div>
+    </section>
+
+    <section class="section estate-section" id="estate">
+      <div class="estate-showcase reveal">
+        <div class="estate-top">
+          <div><img src="assets/icona.png" alt=""><div><b>Panda Estate Manager</b><small>Azalea Glades · Estate manager permissions detected</small></div></div>
+          <div><small>PARCEL STATS</small><b>2 parcels · 1 for sale</b></div>
+        </div>
+        <div class="estate-tabs"><b>Region / Debug</b><span>Estate Access</span><span>Parcels</span><span>For Sale</span><span>Top Colliders</span><span>Top Scripts</span></div>
+        <div class="estate-panels">
+          <div><small>ESTATE MESSAGE</small><div class="estate-textarea"></div><button>Send estate message</button></div>
+          <div><small>SEND HOME &amp; RESTART</small><div class="estate-input">Resident UUID</div><div class="estate-buttons"><button>Send home</button><button>Delayed restart</button></div></div>
+          <div><small>REGION DEBUG</small><label>□ Disable scripts</label><label>□ Disable collisions</label><label>□ Disable physics</label><button>Apply settings</button></div>
+        </div>
+      </div>
+      <div class="estate-copy reveal">
+        <div class="eyebrow"><span></span><b data-i18n="estateEyebrow">Land and region management</b></div>
+        <h2 data-i18n-html="estateTitle">Your estate.<br><em>Under control.</em></h2>
+        <p data-i18n="estateText">A dedicated workspace for estate owners and managers. Review parcels, control access, broadcast messages, inspect resource-heavy objects and perform region operations.</p>
+        <div class="tag-list">
+          <span data-i18n="tagParcels">Parcels & land sales</span>
+          <span data-i18n="tagAccess">Estate access lists</span>
+          <span data-i18n="tagScripts">Top scripts & colliders</span>
+          <span data-i18n="tagRegion">Region restart & debug</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section notice-section">
+      <div class="notice-copy reveal">
+        <div class="eyebrow"><span></span><b>Panda Group Notice</b></div>
+        <h2 data-i18n-html="noticeTitle">Reach your groups.<br><em>On your schedule.</em></h2>
+        <p data-i18n="noticeText">Choose one or more groups, attach an inventory item or image, send immediately or repeat the notice at a selected interval.</p>
+      </div>
+      <div class="notice-flow reveal">
+        <div><span>1</span><b data-i18n="noticeStep1">Select groups</b></div><i></i>
+        <div><span>2</span><b data-i18n="noticeStep2">Write notice</b></div><i></i>
+        <div><span>3</span><b data-i18n="noticeStep3">Attach inventory</b></div><i></i>
+        <div><span>4</span><b data-i18n="noticeStep4">Send or schedule</b></div>
+      </div>
+    </section>
+
+    <section class="download-section" id="download">
+      <div class="download-glow"></div>
+      <img class="download-icon" src="assets/icona.png" alt="">
+      <div class="eyebrow"><span></span><b data-i18n="downloadEyebrow">Ready for your workflow?</b></div>
+      <h2 data-i18n="downloadTitle">Put Panda on your desktop.</h2>
+      <p data-i18n="downloadText">Guided Windows installation, English license agreement, clean upgrades and full Estate Edition tools.</p>
+      <a class="button button-primary button-download" href="downloads/Panda-SL-Client-Bot-Estate-Setup-2.2.2.exe" download>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
+        <span data-i18n="downloadFull">Download Panda SL Client Bot</span>
+      </a>
+      <div class="download-meta" data-i18n="downloadMeta">Estate Edition 2.2.2 · Windows 10/11 64 bit · EULA acceptance required</div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top">
+      <img src="assets/icona.png" alt="">
+      <span>Panda <strong>SL</strong> Client Bot</span>
+    </a>
+    <p data-i18n="footerText">Independent creator and estate management software for Second Life.</p>
+    <span>© <span id="year"></span> Panda Software</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
